@@ -16,7 +16,9 @@ export const ToastShell: React.FC = () => {
       </div>
       <Hero />
       <InitiativesLayout />
-      <BackersProgress />
+      <div className='px-6'>
+        <BackersProgress />
+      </div>
       <FAQAccordion />
       <Newsletter />
     </ToastProvider>
