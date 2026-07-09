@@ -6,16 +6,16 @@ import { dirname, resolve } from 'node:path';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
-import node from '@astrojs/node';
-
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// https://astro.build/config
+// https://astro.build
 export default defineConfig({
+  output: 'static', // Forces flat HTML compilation
+
   integrations: [react()],
 
   vite: {
-      resolve: {
+    resolve: {
       alias: {
         '@': resolve(__dirname, './src'),
       },
@@ -29,9 +29,4 @@ export default defineConfig({
 
   site: "https://abok-cymk.github.io",
   base: "/green-impact-innovators",
-
-  adapter: node({
-    mode: 'standalone',
-  }),
-   output: 'static'
 });
