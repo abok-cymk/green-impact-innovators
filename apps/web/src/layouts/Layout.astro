@@ -15,6 +15,8 @@ const canonicalURL = new URL(
 	Astro.url.pathname,
 	Astro.site || "https://greenimpactinnovators.org",
 ).toString();
+
+const manifestJsonPath = `${import.meta.env.BASE_URL}/manifest.json`
 ---
 
 <!doctype html>
@@ -23,7 +25,7 @@ const canonicalURL = new URL(
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<link rel="manifest" href="/manifest.json" />
+		<link rel="manifest" href={manifestJsonPath} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<!-- Automated Technical SEO Ingestion -->
