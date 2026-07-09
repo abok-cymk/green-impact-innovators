@@ -1,0 +1,12 @@
+{
+  "name": "Green Impact Innovators",
+  "short_name": "EcoInnovators",
+  "description": "Decentralized ecosystem infrastructure for grassroots sustainability initiatives.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#059669",
+  "icons": [
+    { "public": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

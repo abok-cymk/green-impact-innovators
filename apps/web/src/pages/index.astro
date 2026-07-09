@@ -1,0 +1,14 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import StructuredData from '@/components/StructuredData/index.astro';
+import { ToastShell } from '@/components/ui/ToastShell';
+---
+
+<Layout>
+<StructuredData />
+	<main class="--max-w-7xl mx-auto">
+		<ToastShell client:load />
+	</main>
+</Layout>
+
+

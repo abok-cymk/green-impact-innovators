@@ -1,0 +1,68 @@
+---
+import { SEO } from "astro-seo";
+import { globalSEO } from "@/data/seoConfig";
+import "@/styles/global.css";
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = globalSEO.title, description = globalSEO.description } =
+	Astro.props;
+
+const canonicalURL = new URL(
+	Astro.url.pathname,
+	Astro.site || "https://greenimpactinnovators.org",
+).toString();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<!-- Automated Technical SEO Ingestion -->
+		<SEO
+			title={title}
+			description={description}
+			canonical={canonicalURL}
+			openGraph={{
+				basic: {
+					title: title,
+					type: globalSEO.openGraph.basic.type,
+					image: globalSEO.openGraph.basic.image,
+					url: canonicalURL,
+				},
+				optional: {
+					siteName: globalSEO.openGraph.optional.siteName,
+					description: description,
+				},
+			}}
+			twitter={{
+				card: "summary_large_image",
+				site: "@GreenImpactCBO",
+				title: title,
+				description: description,
+				image: globalSEO.openGraph.basic.image,
+			}}
+			extend={{
+				meta: [
+					{
+						name: "robots",
+						content: "index, follow, max-image-preview:large",
+					},
+					{ name: "theme-color", content: "#059669" },
+					{ name: "generator", content: Astro.generator },
+				],
+			}}
+		/>
+	</head>
+	<body class="min-h-screen text-slate-100 antialiased selection:bg-emerald-500/20 selection:text-emerald-300">
+		<slot />
+	</body>
+</html>

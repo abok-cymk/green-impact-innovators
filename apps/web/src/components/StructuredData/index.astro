@@ -1,0 +1,19 @@
+---
+// Clean, server-rendered JSON-LD schema injection matrix
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "NGO", // Explicit non-profit/community organization designation
+  "name": "Green Impact Innovators",
+  "url": "https://greenimpactinnovators.org",
+  "logo": "https://greenimpactinnovators.org",
+  "description": "Decentralized ecosystem infrastructure for grassroots sustainability initiatives.",
+  "knowsAbout": [
+    "Environmental Compliance",
+    "Community Based Organization Architecture",
+    "Climate Metric Verification"
+  ],
+  "publishingPrinciples": "https://greenimpactinnovators.org",
+  "status": "In Certification Validation Pipeline"
+};
+---
+<script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
