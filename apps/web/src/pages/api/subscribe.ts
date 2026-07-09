@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 import { newsletterSchema } from '@/components/Newsletter/schema';
 
 // To run API endpoints dynamically during request time, we turn on Server-Side Rendering (SSR) mode
-export const prerender = false;
+// export const prerender = false;
 
 const resend = new Resend(import.meta.env.RESEND_API_KEY);
 
