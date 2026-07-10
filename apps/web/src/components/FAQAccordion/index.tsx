@@ -1,5 +1,5 @@
 import { localFAQData } from "@/data/faqData";
-// import { X, Plus } from "lucide-react";
+
 import {
   Accordion,
   AccordionContent,
@@ -19,7 +19,7 @@ export const FAQAccordion: React.FC = () => {
         {localFAQData.map((item) => {
           return (
             <AccordionItem key={item.value} value={item.value} className="px-6 py-3 bg-green-200 rounded-lg">
-              <AccordionTrigger className="font-semibold text-emerald-950 font-heading text-xl decoration-0">{item.trigger}</AccordionTrigger>
+              <AccordionTrigger className="font-semibold text-emerald-950 font-heading text-xl decoration-0 flex items-center">{item.trigger}</AccordionTrigger>
               <AccordionContent className="text-emerald-950 leading-relaxed text-base font-body">{item.content}</AccordionContent>
             </AccordionItem>
           );
