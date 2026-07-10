@@ -27,6 +27,6 @@ export default defineConfig({
     host: true,
   },
 
-  site: "https://abok-cymk.github.io",
-  base: "/green-impact-innovators",
+ site: 'https://greenimpactinnovators.works', 
+  base: '/',
 });

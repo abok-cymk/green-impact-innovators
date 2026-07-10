@@ -20,15 +20,15 @@ export const globalSEO: SEOBlueprint = {
   title: "Green Impact Innovators | CBO",
   description: "Empowering schools and communities in Kisumu to tackle hunger and climate change through sustainable forest gardens.",
   
-  canonical: "https://abok-cymk.github.io/green-impact-innovators/",
+  canonical: "https://greenimpactinnovators.works/",
   
   openGraph: {
     basic: {
       title: "Green Impact Innovators | CBO",
       type: "website",
       // preview image (e.g., og-image.png) inside public/ folder.
-      image: "https://abok-cymk.github.io/green-impact-innovators/og-image.png", 
-      url: "https://abok-cymk.github.io/green-impact-innovators/"
+      image: "https://greenimpactinnovators.works/og-image.png", 
+      url: "https://greenimpactinnovators.works/"
     },
     optional: {
       siteName: "Green Impact Innovators",
