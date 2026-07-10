@@ -32,11 +32,11 @@ export function ProjectBubble({
       onFocus={onMouseEnter}
       aria-label={`View details for ${initiative.title}`}
       className={cn(
-        "absolute rounded-full overflow-hidden transition-all duration-500 ease-out focus:outline-none focus:ring-4 focus:ring-offset-2",
+        "absolute rounded-full md:rounded-md overflow-hidden transition-all duration-500 ease-out focus:outline-none focus:ring-4 focus:ring-offset-2",
         // Distinct size configurations based on active state
         isActive 
-          ? "w-20 h-20 md:w-36 md:h-36 z-20 scale-100 shadow-xl ring-4" 
-          : "w-14 h-14 md:w-32 md:h-32 z-10 scale-80 opacity-60 hover:opacity-100 hover:scale-100 shadow-md hover:z-20 ring-2 ring-transparent",
+          ? "w-20 h-20 md:w-52 md:h-52 z-20 scale-100 shadow-xl ring-4" 
+          : "w-20 h-20 md:w-48 md:h-48 z-10 scale-80 opacity-60 hover:opacity-100 hover:scale-100 shadow-md hover:z-20 ring-2 ring-transparent",
         borderRingColor,
         positionClass
       )}

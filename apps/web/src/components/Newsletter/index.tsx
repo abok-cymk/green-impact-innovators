@@ -74,17 +74,17 @@ export const Newsletter: React.FC = () => {
 
   return (
     <footer ref={formRef} className="bg-linear-to-b from-emerald-950 to-emerald-800 border-t border-green-100 py-20 px-4 mt-20 text-center">
-      <div className="max-w-xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-black text-white mb-3">
-          Get notified when we launch.
+          Follow our journey to grow greener schools.
         </h2>
         <p className="text-base text-green-100 mb-8 mx-auto">
-          Receive transparent, verifiable updates on our launch progress.
+         Receive updates on our school forest gardens, local tree-planting, and student-led environmental campaigns.
         </p>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-2 mx-auto"
+          className="flex flex-col gap-2 mx-auto max-w-xl"
         >
           <div className="flex flex-col sm:flex-row gap-3 bg-emerald-950 p-2.5 rounded-2xl border border-emerald-800/70 focus-within:border-lime-400 focus-within:ring-2 focus-within:ring-lime-400/20 transition-all duration-300 shadow-xl shadow-black/20">
             <input
@@ -103,7 +103,7 @@ export const Newsletter: React.FC = () => {
               disabled={isSubmitting}
               className="px-6 py-3 bg-lime-400 hover:bg-lime-300 text-emerald-950 font-semibold rounded-xl text-sm transition-all duration-300 whitespace-nowrap disabled:cursor-not-allowed disabled:opacity-60 active:scale-[0.98] cursor-pointer"
             >
-              {isSubmitting ? "Sending..." : "Get Notified"}
+              {isSubmitting ? "Sending..." : "Stay Updated"}
             </button>
           </div>
 

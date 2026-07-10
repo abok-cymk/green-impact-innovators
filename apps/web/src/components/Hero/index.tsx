@@ -21,8 +21,7 @@ export function Hero() {
           text-[#4B5C54]
         "
       >
-        Trusted operational frameworks that empower community-led environmental
-        initiatives through transparency, accountability, and measurable impact.
+       Empowering school communities in Kisumu to tackle climate change and food insecurity through low-cost, student-led forest gardens. Partner with us as a mentor, supporter, or strategic ally to help scale our impact.
       </p>
       <div className="flex items-center justify-center mt-12">
         <BackProjectButton />
