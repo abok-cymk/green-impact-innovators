@@ -21,7 +21,7 @@ const MOBILE_CLOUD_CLASSES = [
   "top-[45%] left-[80%]",
 ];
 
-// Staggered absolute coordinates for Desktop Left Cloud (restored)
+// Staggered absolute coordinates for Desktop Left Cloud
 const LEFT_CLOUD_CLASSES = [
   "top-[5%] left-[10%]",
   "top-[22%] left-[45%]",
@@ -31,7 +31,7 @@ const LEFT_CLOUD_CLASSES = [
   "top-[70%] left-[48%]",
 ];
 
-// Staggered absolute coordinates for Desktop Right Cloud (restored)
+// Staggered absolute coordinates for Desktop Right Cloud
 const RIGHT_CLOUD_CLASSES = [
   "top-[5%] right-[45%]",
   "top-[20%] right-[10%]",
@@ -68,7 +68,7 @@ export const InitiativesLayout: React.FC = () => {
         
         {/* MOBILE: Staggered Overlapping Bubble Cloud */}
         <div 
-          className="block lg:hidden w-full relative h-55 md:h-65 mb-6 select-none"
+          className="block lg:hidden w-full relative h-58 md:h-65 my-6 select-none"
           onMouseLeave={() => setIsInteracting(false)}
         >
           {INITIATIVES_DATA.map((item, index) => {
@@ -88,7 +88,7 @@ export const InitiativesLayout: React.FC = () => {
 
         {/* DESKTOP: Left Side Bubble Cloud */}
         <div
-          className="hidden lg:block relative w-85 h-150"
+          className="hidden lg:block relative w-85 h-180"
           onMouseLeave={() => setIsInteracting(false)}
         >
           {leftBubbles.map((item, index) => {
@@ -130,7 +130,7 @@ export const InitiativesLayout: React.FC = () => {
 
         {/* DESKTOP: Right Side Bubble Cloud */}
         <div
-          className="hidden lg:block relative w-85 h-150"
+          className="hidden lg:block relative w-85 h-180"
           onMouseLeave={() => setIsInteracting(false)}
         >
           {rightBubbles.map((item, index) => {

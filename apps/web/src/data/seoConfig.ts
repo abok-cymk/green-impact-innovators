@@ -17,19 +17,22 @@ export interface SEOBlueprint {
 }
 
 export const globalSEO: SEOBlueprint = {
-  title: "Green Impact Innovators | CBO Certification & Legal Framework Pipeline",
-  description: "A transparent update on certification progress, partnership readiness, and public accountability for community climate initiatives.",
-  canonical: "https://greenimpactinnovators.org",
+  title: "Green Impact Innovators | CBO",
+  description: "Empowering schools and communities in Kisumu to tackle hunger and climate change through sustainable forest gardens.",
+  
+  canonical: "https://abok-cymk.github.io/green-impact-innovators/",
+  
   openGraph: {
     basic: {
-      title: "Green Impact Innovators | Community Climate Impact",
+      title: "Green Impact Innovators | CBO",
       type: "website",
-      image: "https://greenimpactinnovators.org", // Use absolute paths for crawl bots
-      url: "https://greenimpactinnovators.org"
+      // preview image (e.g., og-image.png) inside public/ folder.
+      image: "https://abok-cymk.github.io/green-impact-innovators/og-image.png", 
+      url: "https://abok-cymk.github.io/green-impact-innovators/"
     },
     optional: {
-      siteName: "Green Impact Innovators Protocol",
-      description: "Trusted operational frameworks that support community-led environmental impact with clear accountability."
+      siteName: "Green Impact Innovators",
+      description: "Empowering schools and communities in Kisumu to tackle hunger and climate change through sustainable forest gardens."
     }
   }
 };
